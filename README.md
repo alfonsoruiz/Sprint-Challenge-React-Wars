@@ -26,11 +26,19 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+  React tries to solve the problems created by data/state intensive modern web applications through concepts like the Virtual   DOM and the ability to create encapsulated re-usable components to build applications. The use of these concepts also helps   with alot of the issues that come with applications as they get larger/scale.
+
 - [ ] What does it mean to _think_ in react?
+
+  To think in react is to think in terms of components and composability. Components should follow the principle of single      responsibility meaning they ideally one thing. And those components should then be composed/arranged in a way that froms a logical parent, child, sibling etc. relationships for data to be passed through an application.
 
 - [ ] Describe state.
 
+  State is an object within a class component that represents the data that an appliction requires/needs to keep track of. Set    state is immutable but should only be changed by the use of the set State function provided by the react api. Whenever set    state function is called and changes the state of an application it passes any relevant changes back through the      applictions components as props and re-rends the ui.
+
 - [ ] Describe props.
+
+In react props are used to pass relevant data in a dynamic way from one component to another in an application. Props are also immutable so components can only read the data on the props object passed into them but not modify it.
 
 ## Project Set Up
 
