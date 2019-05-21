@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarWarsList from './components/StarWarsList';
 
 class App extends Component {
   constructor() {
@@ -23,16 +24,20 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        console.log(data.results)
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+
+
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <div className='App'>
+        <h1 className='Header'>React Wars</h1>
+        <StarWarsList list={this.state.starwarsChars}/>
       </div>
     );
   }
